@@ -1,0 +1,11 @@
+{
+  "name": "babylon-options",
+  "version": "0.0.0",
+  "description": "Simplified options for Babylon",
+  "main": "index.js",
+  "author": "James Kyle <me@thejameskyle.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "flow-bin": "^0.46.0"
+  }
+}
