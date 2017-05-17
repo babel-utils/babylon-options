@@ -1,6 +1,6 @@
 # babylon-options
 
-> Simplified options for Babylon
+> Simplified options for [Babylon](https://github.com/babel/babylon)
 
 **Before:**
 
