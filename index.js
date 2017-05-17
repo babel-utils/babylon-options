@@ -10,7 +10,7 @@ const STAGES = {
 };
 
 /*::
-type Options = {
+export type Options = {
   sourceType?: "script" | "module",
   stage?: number,
   plugins?: Array<string>,
