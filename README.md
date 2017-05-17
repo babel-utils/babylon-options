@@ -2,6 +2,29 @@
 
 > Simplified options for Babylon
 
+**Before:**
+
+```js
+babylon.parse(code, {
+  sourceType: 'module',
+  plugins: [
+    'jsx',
+    'flow',
+    'doExpressions',
+    'objectRestSpread',
+    'decorators',
+    'classProperties',
+    'exportExtensions',
+    'asyncGenerators',
+    'functionBind',
+    'functionSent',
+    'dynamicImport',
+  ],
+});
+```
+
+**After:**
+
 ```js
 import * as babylon from 'babylon';
 import createBabylonOptions from 'babylon-options';
