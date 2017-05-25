@@ -19,7 +19,7 @@ export type Options = {
 */
 
 function createBabylonOptions(opts /*: Options */) {
-  let {sourceType, stage, plugins, ...rest} = opts;
+  let {sourceType, stage, plugins} = opts;
   let set = new Set(plugins);
 
   if (typeof stage === 'number') {
@@ -30,10 +30,16 @@ function createBabylonOptions(opts /*: Options */) {
     }
   }
 
+  let clone = Object.assign({}, opts);
+
+  delete clone.sourceType;
+  delete clone.stage;
+  delete clone.plugins;
+
   return {
     sourceType: sourceType || 'module',
     plugins: Array.from(set),
-    ...rest,
+    ...clone,
   };
 }
 
