@@ -36,11 +36,10 @@ function createBabylonOptions(opts /*: Options */) {
   delete clone.stage;
   delete clone.plugins;
 
-  return {
+  return Object.assign({}, {
     sourceType: sourceType || 'module',
     plugins: Array.from(set),
-    ...clone,
-  };
+  }, clone);
 }
 
 module.exports = createBabylonOptions;
