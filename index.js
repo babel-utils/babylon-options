@@ -2,11 +2,38 @@
 'use strict';
 
 const STAGES = {
-  '0': ['doExpressions', 'functionBind'],
-  '1': ['exportExtensions'],
-  '2': ['dynamicImport', 'classProperties', 'decorators', 'functionSent'],
-  '3': ['objectRestSpread', 'asyncGenerators'],
-  '4': [],
+  '0': [
+    'doExpressions',
+    'functionBind',
+  ],
+  '1': [
+    'exportExtensions',
+    'exportDefaultFrom',
+    'exportNamespaceFrom',
+    'decorators',
+    'optionalChaining',
+    'pipelineOperator',
+    'nullishCoalescingOperator',
+  ],
+  '2': [
+    'decorators2',
+    'functionSent',
+    'throwExpressions',
+  ],
+  '3': [
+    'classProperties',
+    'classPrivateProperties',
+    'classPrivateMethods',
+    'dynamicImport',
+    'importMeta',
+    'numericSeparator',
+    'bigInt',
+    'optionalCatchBinding',
+  ],
+  '4': [
+    'objectRestSpread',
+    'asyncGenerators',
+  ],
 };
 
 /*::
