@@ -10,7 +10,6 @@ const STAGES = {
     'exportExtensions',
     'exportDefaultFrom',
     'exportNamespaceFrom',
-    'decorators',
     'optionalChaining',
     'pipelineOperator',
     'nullishCoalescingOperator',
